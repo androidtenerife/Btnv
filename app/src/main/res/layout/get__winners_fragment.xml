@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Get_Winners">
+    tools:context=".ui.get_winners.Get_Winners">
 
     <TextView
         android:layout_width="match_parent"

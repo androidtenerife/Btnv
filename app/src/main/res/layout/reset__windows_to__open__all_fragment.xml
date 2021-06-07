@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Reset_Windows_to_Open_All">
+    tools:context=".ui.reset_windows_to_open_all.Reset_Windows_to_Open_All">
 
     <TextView
         android:layout_width="match_parent"

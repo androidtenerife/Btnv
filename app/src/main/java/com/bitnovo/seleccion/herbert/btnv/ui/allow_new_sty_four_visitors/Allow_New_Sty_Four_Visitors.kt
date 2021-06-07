@@ -1,4 +1,4 @@
-package com.bitnovo.seleccion.herbert.btnv
+package com.bitnovo.seleccion.herbert.btnv.ui.allow_new_sty_four_visitors
 
 import android.arch.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,26 +6,27 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bitnovo.seleccion.herbert.btnv.R
 
-class Reset_Windows_to_Open_All : Fragment() {
+class Allow_New_Sty_Four_Visitors : Fragment() {
 
     companion object {
-        fun newInstance() = Reset_Windows_to_Open_All()
+        fun newInstance() = Allow_New_Sty_Four_Visitors()
     }
 
-    private lateinit var viewModel: ResetWindowsToOpenAllViewModel
+    private lateinit var viewModel: AllowNewStyFourVisitorsViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.reset__windows_to__open__all_fragment, container, false)
+        return inflater.inflate(R.layout.allow__new__sty__four__visitors_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(
-            ResetWindowsToOpenAllViewModel::class.java
+            AllowNewStyFourVisitorsViewModel::class.java
         )
         // TODO: Use the ViewModel
     }

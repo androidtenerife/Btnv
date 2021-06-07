@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".State_Of_Windows">
+    tools:context=".ui.state_of_windows.State_Of_Windows">
 
     <TextView
         android:layout_width="match_parent"

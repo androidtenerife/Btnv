@@ -1,4 +1,4 @@
-package com.bitnovo.seleccion.herbert.btnv
+package com.bitnovo.seleccion.herbert.btnv.ui.get_winners
 
 import android.arch.lifecycle.ViewModel
 
