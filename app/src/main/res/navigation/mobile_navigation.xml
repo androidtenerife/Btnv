@@ -22,4 +22,9 @@
         android:name="com.bitnovo.seleccion.herbert.btnv.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/state_Of_Windows"
+        android:name="com.bitnovo.seleccion.herbert.btnv.State_Of_Windows"
+        android:label="state__of__windows_fragment"
+        tools:layout="@layout/state__of__windows_fragment" />
 </navigation>
