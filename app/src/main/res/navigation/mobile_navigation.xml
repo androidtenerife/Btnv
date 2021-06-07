@@ -27,4 +27,9 @@
         android:name="com.bitnovo.seleccion.herbert.btnv.State_Of_Windows"
         android:label="state__of__windows_fragment"
         tools:layout="@layout/state__of__windows_fragment" />
+    <fragment
+        android:id="@+id/amount_Of_Windows_According_to_State"
+        android:name="com.bitnovo.seleccion.herbert.btnv.Amount_Of_Windows_According_to_State"
+        android:label="amount__of__windows__according_to__state_fragment"
+        tools:layout="@layout/amount__of__windows__according_to__state_fragment" />
 </navigation>
