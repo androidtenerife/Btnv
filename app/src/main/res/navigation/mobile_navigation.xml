@@ -23,27 +23,27 @@
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
-        android:id="@+id/state_Of_Windows"
+        android:id="@+id/nav_state_Of_Windows"
         android:name="com.bitnovo.seleccion.herbert.btnv.ui.state_of_windows.State_Of_Windows"
         android:label="state__of__windows_fragment"
         tools:layout="@layout/state__of__windows_fragment" />
     <fragment
-        android:id="@+id/amount_Of_Windows_According_to_State"
+        android:id="@+id/nav_amount_Of_Windows_According_to_State"
         android:name="com.bitnovo.seleccion.herbert.btnv.ui.amount_of_windows_at_state.Amount_Of_Windows_According_to_State"
         android:label="amount__of__windows__according_to__state_fragment"
         tools:layout="@layout/amount__of__windows__according_to__state_fragment" />
     <fragment
-        android:id="@+id/get_Winners"
+        android:id="@+id/nav_get_Winners"
         android:name="com.bitnovo.seleccion.herbert.btnv.ui.get_winners.Get_Winners"
         android:label="get__winners_fragment"
         tools:layout="@layout/get__winners_fragment" />
     <fragment
-        android:id="@+id/reset_Windows_to_Open_All"
+        android:id="@+id/nav_reset_Windows_to_Open_All"
         android:name="com.bitnovo.seleccion.herbert.btnv.ui.reset_windows_to_open_all.Reset_Windows_to_Open_All"
         android:label="reset__windows_to__open__all_fragment"
         tools:layout="@layout/reset__windows_to__open__all_fragment" />
     <fragment
-        android:id="@+id/allow_New_Sty_Four_Visitors"
+        android:id="@+id/nav_allow_New_Sty_Four_Visitors"
         android:name="com.bitnovo.seleccion.herbert.btnv.ui.allow_new_sty_four_visitors.Allow_New_Sty_Four_Visitors"
         android:label="allow__new__sty__four__visitors_fragment"
         tools:layout="@layout/allow__new__sty__four__visitors_fragment" />
