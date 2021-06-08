@@ -46,7 +46,7 @@ class State_Of_Windows : Fragment() {
                 StateOfWindowsViewModel::class.java
             )
         // TODO: Get State of windows.
-        val textView: TextView = binding.tvAmountOfWindows
+        val textView: TextView = binding.tvResultsVisitors
         // TO See the state of windows call the Function
         val result = Hotel.getStateOfWindows()
         textView.text = result.toString()
