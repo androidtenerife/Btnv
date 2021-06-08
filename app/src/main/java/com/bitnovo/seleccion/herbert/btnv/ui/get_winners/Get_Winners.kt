@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.bitnovo.seleccion.herbert.btnv.R
+import com.bitnovo.seleccion.herbert.btnv.model.Hotel
 
 class Get_Winners : Fragment() {
 
@@ -21,6 +22,7 @@ class Get_Winners : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.get__winners_fragment, container, false)
+
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -30,6 +32,8 @@ class Get_Winners : Fragment() {
             ViewModelProvider.NewInstanceFactory()
         ).get(GetWinnersViewModel::class.java)
         // TODO: Use the ViewModel
+        Hotel.fakeWinners()
+        Hotel.getWinners()
     }
 
 }

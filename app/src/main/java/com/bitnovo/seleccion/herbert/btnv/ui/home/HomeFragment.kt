@@ -1,14 +1,13 @@
 package com.bitnovo.seleccion.herbert.btnv.ui.home
 
+import android.arch.lifecycle.Observer
+import android.arch.lifecycle.ViewModelProvider
 import android.os.Bundle
+import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.support.v4.app.Fragment
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProvider
-import com.bitnovo.seleccion.herbert.btnv.R
 import com.bitnovo.seleccion.herbert.btnv.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -35,6 +34,7 @@ class HomeFragment : Fragment() {
         val root: View = binding.root
 
         val textView: TextView = binding.textHome
+
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })

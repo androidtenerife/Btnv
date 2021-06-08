@@ -6,6 +6,7 @@
     tools:context=".ui.state_of_windows.State_Of_Windows">
 
     <TextView
+        android:id="@+id/tvResult"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Hello" />
