@@ -12,13 +12,14 @@ import com.bitnovo.seleccion.herbert.btnv.model.Hotel
 
 class Amount_Of_Windows_According_to_State : Fragment() {
 
+    private lateinit var amountOfWindowsAccordingToStateViewModel: AmountOfWindowsAccordingToStateViewModel
+    private var _binding: AmountOfWindowsAccordingToStateFragmentBinding? = null
+    private val binding get() = _binding!!
+
     companion object {
         fun newInstance() = Amount_Of_Windows_According_to_State()
     }
 
-    private lateinit var amountOfWindowsAccordingToStateViewModel: AmountOfWindowsAccordingToStateViewModel
-    private var _binding: AmountOfWindowsAccordingToStateFragmentBinding? = null
-    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

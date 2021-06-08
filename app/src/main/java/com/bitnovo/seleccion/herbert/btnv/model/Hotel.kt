@@ -17,6 +17,37 @@ object Hotel {
         return get_state_of_windows_array
     }
 
+    fun allowNewStyFourVisitors() {
+// Starting to Visit to the hotel
+        var multiplo: Int
+
+        for (indexVisitor in 0..63) {
+
+            for (indexWindows in 0..63) {
+                if (indexVisitor == 1) {
+                    //Open the left window
+                    windows.set(indexWindows, "I")
+                }
+                // Visitor #2
+                if (indexVisitor == 2 && indexWindows.mod(2) == 0) {
+                    //Open the left window
+                    windows.set(indexWindows, "D")
+                }
+                // Visitor #3
+                if (indexVisitor == 3 && windows[indexWindows].contains() indexWindows . mod (2) == 0) {
+                    //Open the left window
+                    windows.set(indexWindows, "D")
+                }
+
+
+            }
+
+
+        }
+
+
+    }
+
     fun amountOfWindowsAccordingToState(): ArrayList<Int> {
         // The order in the array is the same of Position 0 to 3 respectively C-A-I-O
         val amountOfWindowsArrayList = ArrayList<Int>()
@@ -24,6 +55,11 @@ object Hotel {
         var state_A: Int = 0
         var state_I: Int = 0
         var state_D: Int = 0
+        // Addeded the 2 values more for other states IC = Left Closed  - DC = Right Closed
+        var state_IC: Int = 0
+        var state_DC: Int = 0
+
+
         // Iterate on Hotel array windows
         for (index in 0..63) {
 
@@ -39,7 +75,18 @@ object Hotel {
             if (windows[index].contentEquals("D")) {
                 state_D++
             }
+            //The instructions is that the windows have 4 states. But in this
+            //2 options :
+            //I = Left wing open and D = Right wing open.
+            //But missing:
+            //When are these left wing closed and right wing closed
 
+            if (windows[index].contentEquals("IC")) {
+                state_IC++
+            }
+            if (windows[index].contentEquals("DC")) {
+                state_DC++
+            }
         }
         Log.d("Amount Of C", state_C.toString())
         Log.d("Amount Of A", state_A.toString())
