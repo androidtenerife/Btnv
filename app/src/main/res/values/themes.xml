@@ -2,10 +2,12 @@
     <!-- Base application theme. -->
     <style name="Theme.Btnv" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">?attr/colorPrimaryDark</item>
-        <item name="colorPrimaryDark">?android:attr/colorPressedHighlight</item>
-        <item name="colorAccent">@color/teal_200</item>
+        <item name="colorPrimary">@color/secondaryDarkColor</item>
+        <item name="colorPrimaryDark">@color/primaryLightColor</item>
+        <item name="colorAccent">@color/primaryDarkColor</item>
+
         <!-- Customize your theme here. -->
+
     </style>
 
     <style name="Theme.Btnv.NoActionBar">
