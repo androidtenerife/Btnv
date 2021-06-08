@@ -21,6 +21,127 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="States of Windows"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTypeAValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="13dp"
+            android:text="Type A"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTypeCValue"
+            app:layout_constraintEnd_toEndOf="@+id/tvTypeATitle"
+            app:layout_constraintStart_toEndOf="@+id/tvTitleC"
+            app:layout_constraintTop_toBottomOf="@+id/tvTypeATitle" />
+
+        <TextView
+            android:id="@+id/tvTypeIValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="13dp"
+            android:text="Type I"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTypeAValue"
+            app:layout_constraintEnd_toStartOf="@+id/tvTypeDTitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvTypeATitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTypeITitle" />
+
+        <TextView
+            android:id="@+id/tvTypeDValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="68dp"
+            android:text="Type D"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTypeIValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvTypeITitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTypeDTitle" />
+
+        <TextView
+            android:id="@+id/tvTypeCValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Type C"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvTitleC"
+            app:layout_constraintStart_toStartOf="@+id/tvTitleC"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleC" />
+
+        <TextView
+            android:id="@+id/tvTypeATitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="76dp"
+            android:text="Type A"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTypeITitle"
+            app:layout_constraintEnd_toStartOf="@+id/tvTypeITitle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvTitleC"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/tvTitleC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="76dp"
+            android:text="Type C"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTypeATitle"
+            app:layout_constraintEnd_toStartOf="@+id/tvTypeATitle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/tvTypeITitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="76dp"
+            android:text="Type I"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTypeDTitle"
+            app:layout_constraintEnd_toStartOf="@+id/tvTypeDTitle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvTypeATitle"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/tvTypeDTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="68dp"
+            android:text="Type D"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvTypeITitle"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
     </android.support.constraint.ConstraintLayout>
 
 </FrameLayout>

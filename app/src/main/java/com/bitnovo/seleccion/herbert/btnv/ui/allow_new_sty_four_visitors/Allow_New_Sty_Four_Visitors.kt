@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.bitnovo.seleccion.herbert.btnv.databinding.AllowNewStyFourVisitorsFragmentBinding
 
 class Allow_New_Sty_Four_Visitors : Fragment() {
@@ -15,7 +14,7 @@ class Allow_New_Sty_Four_Visitors : Fragment() {
         fun newInstance() = Allow_New_Sty_Four_Visitors()
     }
 
-    private lateinit var allowNewStyFourVisitorsViewModel: AllowNewStyFourVisitorsViewModel: AllowNewStyFourVisitorsViewModel
+    private lateinit var allowNewStyFourVisitorsViewModel: AllowNewStyFourVisitorsViewModel
     private var _binding: AllowNewStyFourVisitorsFragmentBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(
@@ -37,10 +36,7 @@ class Allow_New_Sty_Four_Visitors : Fragment() {
                 AllowNewStyFourVisitorsViewModel::class.java
             )
         // TODO: Use the ViewModel
-        // To see the value of windows accord to state.
-        val amount_of_windows_ac_to_state: TextView = binding.tvAmountOfWindows
-        TODO(Cargar resultado)
-        amount_of_windows_ac_to_state.text = "Cargar Resultado"
+
     }
 
 }

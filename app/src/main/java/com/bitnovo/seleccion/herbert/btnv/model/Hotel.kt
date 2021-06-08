@@ -24,33 +24,31 @@ object Hotel {
         var state_A: Int = 0
         var state_I: Int = 0
         var state_D: Int = 0
+        // Iterate on Hotel array windows
         for (index in 0..63) {
+
             if (windows[index].contentEquals("C")) {
                 state_C++
-                Log.d("Amount Of C", state_C.toString())
             }
             if (windows[index].contentEquals("A")) {
                 state_A++
-                Log.d("Amount Of C", state_C.toString())
             }
             if (windows[index].contentEquals("I")) {
                 state_I++
-                Log.d("Amount Of C", state_C.toString())
             }
             if (windows[index].contentEquals("D")) {
                 state_D++
-                Log.d("Amount Of C", state_C.toString())
             }
-            Log.d("Amount Of C", state_C.toString())
-            Log.d("Amount Of C", state_A.toString())
-            Log.d("Amount Of C", state_I.toString())
-            Log.d("Amount Of C", state_D.toString())
-
 
         }
-
-
-
+        Log.d("Amount Of C", state_C.toString())
+        Log.d("Amount Of A", state_A.toString())
+        Log.d("Amount Of I", state_I.toString())
+        Log.d("Amount Of D", state_D.toString())
+        amountOfWindowsArrayList.add(0, state_C)
+        amountOfWindowsArrayList.add(1, state_A)
+        amountOfWindowsArrayList.add(2, state_I)
+        amountOfWindowsArrayList.add(3, state_D)
         return amountOfWindowsArrayList
     }
 
@@ -68,6 +66,7 @@ object Hotel {
             ) {
                 winners_arraylist.add(index)
             }
+
         }
         //Log.d("Ganadores", winners_arraylist.toString())
         return winners_arraylist
