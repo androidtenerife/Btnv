@@ -19,7 +19,6 @@ object Hotel {
 
     fun allowNewStyFourVisitors() {
 // Starting to Visit to the hotel
-        var multiplo: Int
 
         for (indexVisitor in 0..63) {
 
