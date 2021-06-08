@@ -12,17 +12,6 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.bitnovo.seleccion.herbert.btnv.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.bitnovo.seleccion.herbert.btnv.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-    <fragment
         android:id="@+id/nav_state_Of_Windows"
         android:name="com.bitnovo.seleccion.herbert.btnv.ui.state_of_windows.State_Of_Windows"
         android:label="state__of__windows_fragment"
