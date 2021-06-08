@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.bitnovo.seleccion.herbert.btnv.databinding.AllowNewStyFourVisitorsFragmentBinding
 import com.bitnovo.seleccion.herbert.btnv.model.Hotel
 
@@ -38,7 +39,11 @@ class Allow_New_Sty_Four_Visitors : Fragment() {
                 AllowNewStyFourVisitorsViewModel::class.java
             )
         // TODO: Use the ViewModel
+        val result: TextView = binding.tvResultsVisitors
         Hotel.allowNewStyFourVisitors()
+        //Call to the state of windows to show the result
+        result.text = Hotel.getStateOfWindows().toString()
+
     }
 
 }

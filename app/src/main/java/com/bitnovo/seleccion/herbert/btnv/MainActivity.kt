@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-        // Todo Populate the Hotel if is empty
+        // Populate the Hotel if is empty
         if (Hotel.isEmptyHotel()) {
             Hotel.populateWindows()
         }

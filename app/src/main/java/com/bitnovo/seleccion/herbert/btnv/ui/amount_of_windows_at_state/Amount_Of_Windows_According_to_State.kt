@@ -45,7 +45,7 @@ class Amount_Of_Windows_According_to_State : Fragment() {
             )
         // TODO: Use the ViewModel
         // To see the value of windows accord to state.
-        val amount_of_windows_ac_to_state: TextView = binding.tvAmountOfWindows
+        val amount_of_windows_ac_to_state: TextView = binding.tvResultsAmount
         val state_c_value: TextView = binding.tvTypeCValue
         val state_a_value: TextView = binding.tvTypeAValue
         val state_i_value: TextView = binding.tvTypeIValue
