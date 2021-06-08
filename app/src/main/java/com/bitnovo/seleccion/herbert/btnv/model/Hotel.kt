@@ -29,16 +29,28 @@ object Hotel {
                     windows.set(indexWindows, "I")
                 }
                 // Visitor #2
-                if (indexVisitor == 2 && indexWindows.mod(2) == 0) {
+                if (indexVisitor == 2 && indexWindows.rem(2) == 0) {
                     //Open the left window
                     windows.set(indexWindows, "D")
                 }
                 // Visitor #3
-                if (indexVisitor == 3 && windows[indexWindows].contains() indexWindows . mod (2) == 0) {
+                if (indexVisitor == 3 && windows[indexWindows].contains("D") && indexWindows.rem(3) == 0) {
                     //Open the left window
+                    windows.set(indexWindows, "I")
+                }
+                // Visitor #4
+                if (indexVisitor == 4 && (windows[indexWindows].contains("C")
+                            || windows[indexWindows].contains("I")
+                            || windows[indexWindows].contains("A")) && indexWindows.rem(4) == 0
+                ) {
+                    //Open the right window
                     windows.set(indexWindows, "D")
                 }
-
+                // Visitor #5
+                if (indexVisitor == 5 && windows[indexWindows].contains("D") && indexWindows.rem(3) == 0) {
+                    //Open the left window
+                    windows.set(indexWindows, "I")
+                }
 
             }
 
@@ -55,9 +67,7 @@ object Hotel {
         var state_A: Int = 0
         var state_I: Int = 0
         var state_D: Int = 0
-        // Addeded the 2 values more for other states IC = Left Closed  - DC = Right Closed
-        var state_IC: Int = 0
-        var state_DC: Int = 0
+
 
 
         // Iterate on Hotel array windows
@@ -75,18 +85,8 @@ object Hotel {
             if (windows[index].contentEquals("D")) {
                 state_D++
             }
-            //The instructions is that the windows have 4 states. But in this
-            //2 options :
-            //I = Left wing open and D = Right wing open.
-            //But missing:
-            //When are these left wing closed and right wing closed
 
-            if (windows[index].contentEquals("IC")) {
-                state_IC++
-            }
-            if (windows[index].contentEquals("DC")) {
-                state_DC++
-            }
+
         }
         Log.d("Amount Of C", state_C.toString())
         Log.d("Amount Of A", state_A.toString())
@@ -110,6 +110,7 @@ object Hotel {
             if (index > 0 && windows[index].contains("A") &&
                 windows[index - 1].contains('C') &&
                 windows[index + 1].contains('C')
+                || (windows[index].contains('A'))
             ) {
                 winners_arraylist.add(index)
             }

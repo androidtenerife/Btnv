@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.bitnovo.seleccion.herbert.btnv.databinding.AllowNewStyFourVisitorsFragmentBinding
+import com.bitnovo.seleccion.herbert.btnv.model.Hotel
 
 class Allow_New_Sty_Four_Visitors : Fragment() {
     private lateinit var allowNewStyFourVisitorsViewModel: AllowNewStyFourVisitorsViewModel
@@ -37,7 +38,7 @@ class Allow_New_Sty_Four_Visitors : Fragment() {
                 AllowNewStyFourVisitorsViewModel::class.java
             )
         // TODO: Use the ViewModel
-
+        Hotel.allowNewStyFourVisitors()
     }
 
 }

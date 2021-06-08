@@ -46,6 +46,8 @@ class MainActivity : AppCompatActivity() {
         if (Hotel.isEmptyHotel()) {
             Hotel.populateWindows()
         }
+        //val numero = 15
+        //Log.d("DanCalc",numero.rem(2).toString())
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
