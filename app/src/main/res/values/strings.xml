@@ -11,4 +11,8 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_state_of_windows">Get State of Windows</string>
+    <string name="menu_amount_of_windows_according_to_state">Amount of Windows according to state</string>
+    <string name="menu_get_winners">Get Winners</string>
+    <string name="menu_reset_windows_to_open_all">Reset Windows to Open All</string>
+    <string name="menu_allow_new_sty_four_visitors">Allow New 64 Visitors</string>
 </resources>

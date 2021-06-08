@@ -9,32 +9,24 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
-        <item
             android:id="@+id/nav_state_Of_Windows"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_state_of_windows" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_amount_Of_Windows_According_to_State"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/menu_amount_of_windows_according_to_state" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_get_Winners"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/menu_get_winners" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_reset_Windows_to_Open_All"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/menu_reset_windows_to_open_all" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_allow_New_Sty_Four_Visitors"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/menu_allow_new_sty_four_visitors" />
     </group>
 </menu>
