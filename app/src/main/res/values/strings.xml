@@ -16,4 +16,7 @@
     <string name="menu_reset_windows_to_open_all">Reset Windows to Open All</string>
     <string name="menu_allow_new_sty_four_visitors">Allow New 64 Visitors</string>
     <string name="the_windows_castle_game">The Windows Castle Game</string>
+    <string name="results">Results</string>
+    <string name="the_windows_castle_game">The Windows Castle Game</string>
+    <string name="dev_test">Dev Test</string>
 </resources>
