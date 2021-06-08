@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.bitnovo.seleccion.herbert.btnv.R
+import com.bitnovo.seleccion.herbert.btnv.databinding.AllowNewStyFourVisitorsFragmentBinding
 
 class Allow_New_Sty_Four_Visitors : Fragment() {
 
@@ -14,20 +14,27 @@ class Allow_New_Sty_Four_Visitors : Fragment() {
         fun newInstance() = Allow_New_Sty_Four_Visitors()
     }
 
-    private lateinit var viewModel: AllowNewStyFourVisitorsViewModel
-
+    private lateinit var allowNewStyFourVisitorsViewModel: AllowNewStyFourVisitorsViewModel: AllowNewStyFourVisitorsViewModel
+    private var _binding: AllowNewStyFourVisitorsFragmentBinding? = null
+    private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.allow__new__sty__four__visitors_fragment, container, false)
+        allowNewStyFourVisitorsViewModel = ViewModelProvider(
+            this, ViewModelProvider.NewInstanceFactory()
+        ).get(allowNewStyFourVisitorsViewModel::class.java)
+        _binding = AllowNewStyFourVisitorsFragmentBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+        return root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(
-            AllowNewStyFourVisitorsViewModel::class.java
-        )
+        allowNewStyFourVisitorsViewModel =
+            ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(
+                AllowNewStyFourVisitorsViewModel::class.java
+            )
         // TODO: Use the ViewModel
     }
 
