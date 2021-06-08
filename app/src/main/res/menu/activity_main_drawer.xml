@@ -6,27 +6,27 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/outline_apartment_black_24"
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_state_Of_Windows"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/outline_window_black_24"
             android:title="@string/menu_state_of_windows" />
         <item
             android:id="@+id/nav_amount_Of_Windows_According_to_State"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/outline_format_list_numbered_black_24"
             android:title="@string/menu_amount_of_windows_according_to_state" />
         <item
             android:id="@+id/nav_get_Winners"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/outline_emoji_events_black_24"
             android:title="@string/menu_get_winners" />
         <item
             android:id="@+id/nav_reset_Windows_to_Open_All"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/outline_restart_alt_black_24"
             android:title="@string/menu_reset_windows_to_open_all" />
         <item
             android:id="@+id/nav_allow_New_Sty_Four_Visitors"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/outline_transfer_within_a_station_black_24"
             android:title="@string/menu_allow_new_sty_four_visitors" />
     </group>
 </menu>
