@@ -37,10 +37,8 @@ object Hotel {
             ) {
                 winners_arraylist.add(index)
             }
-
         }
-        Log.d("Ganadores", winners_arraylist.toString())
-
+        //Log.d("Ganadores", winners_arraylist.toString())
         return winners_arraylist
     }
 
@@ -51,7 +49,7 @@ object Hotel {
 
     @RequiresApi(Build.VERSION_CODES.N)
     fun resetWindowsToOpenAll(): ArrayList<String> {
-        Log.d("Ventana", windows.toString())
+        // Log.d("Ventana", windows.toString())
         for (index in 0..63) {
             windows.set(index, "A")
         }
@@ -72,6 +70,12 @@ object Hotel {
         windows.set(14, "C")
         windows.set(15, "A")
         windows.set(16, "C")
+        windows.set(25, "C")
+        windows.set(26, "A")
+        windows.set(27, "C")
+        windows.set(51, "C")
+        windows.set(52, "A")
+        windows.set(53, "C")
     }
 }
 

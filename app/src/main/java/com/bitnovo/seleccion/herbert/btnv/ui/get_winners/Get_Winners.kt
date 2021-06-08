@@ -45,7 +45,6 @@ class Get_Winners : Fragment() {
         // TODO: Use the ViewModel
         val winners: TextView = binding.tvWinners
         //To see the winners
-        // Fake winners is a test Hotel.fakeWinners()
         winners.text = Hotel.getWinners().toString()
     }
 
