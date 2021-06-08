@@ -17,8 +17,39 @@ object Hotel {
         return get_state_of_windows_array
     }
 
-    fun amountOfWindowsAccordingToState(): ArrayList<String> {
-        val amountOfWindowsArrayList = windows
+    fun amountOfWindowsAccordingToState(): ArrayList<Int> {
+        // The order in the array is the same of Position 0 to 3 respectively C-A-I-O
+        val amountOfWindowsArrayList = ArrayList<Int>()
+        var state_C: Int = 0
+        var state_A: Int = 0
+        var state_I: Int = 0
+        var state_D: Int = 0
+        for (index in 0..63) {
+            if (windows[index].contentEquals("C")) {
+                state_C++
+                Log.d("Amount Of C", state_C.toString())
+            }
+            if (windows[index].contentEquals("A")) {
+                state_A++
+                Log.d("Amount Of C", state_C.toString())
+            }
+            if (windows[index].contentEquals("I")) {
+                state_I++
+                Log.d("Amount Of C", state_C.toString())
+            }
+            if (windows[index].contentEquals("D")) {
+                state_D++
+                Log.d("Amount Of C", state_C.toString())
+            }
+            Log.d("Amount Of C", state_C.toString())
+            Log.d("Amount Of C", state_A.toString())
+            Log.d("Amount Of C", state_I.toString())
+            Log.d("Amount Of C", state_D.toString())
+
+
+        }
+
+
 
         return amountOfWindowsArrayList
     }
