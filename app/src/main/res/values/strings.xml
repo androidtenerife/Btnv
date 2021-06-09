@@ -24,8 +24,5 @@
     <string name="type_i">Type I</string>
     <string name="type_d">Type D</string>
     <string name="type_c">Type C</string>
-    <string name="type_a">Type A</string>
-    <string name="type_c">Type C</string>
-    <string name="type_i">Type I</string>
-    <string name="type_d">Type D</string>
+
 </resources>

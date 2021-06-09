@@ -14,4 +14,9 @@
     <string name="action_settings">Ajustes</string>
     <string name="nav_header_title" translatable="false">Android Studio</string>
     <string name="states_of_windows">Num. Ventanas según estados</string>
+    <string name="type_a">Type A</string>
+    <string name="type_i">Type I</string>
+    <string name="type_d">Type D</string>
+    <string name="type_c">Type C</string>
+
 </resources>

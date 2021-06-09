@@ -32,18 +32,20 @@ class Allow_New_Sty_Four_Visitors : Fragment() {
         return root
     }
 
+
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         allowNewStyFourVisitorsViewModel =
             ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(
                 AllowNewStyFourVisitorsViewModel::class.java
             )
+        allowNewStyFourVisitorsViewModel.updateActionBarTitle("Holasss")
+
         // TODO: Use the ViewModel
         val result: TextView = binding.tvResultsVisitors
         Hotel.allowNewStyFourVisitors()
         //Call to the state of windows to show the result
         result.text = Hotel.getStateOfWindows().toString()
-
     }
 
 }
