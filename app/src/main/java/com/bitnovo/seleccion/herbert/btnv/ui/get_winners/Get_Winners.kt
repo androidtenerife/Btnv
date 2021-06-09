@@ -3,6 +3,7 @@ package com.bitnovo.seleccion.herbert.btnv.ui.get_winners
 import android.arch.lifecycle.ViewModelProvider
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -45,7 +46,12 @@ class Get_Winners : Fragment() {
         // TODO: Use the ViewModel
         val winners: TextView = binding.tvWinners
         //To see the winners
-        winners.text = Hotel.getWinners().toString()
+        try {
+            winners.text = Hotel.getWinners().toString()
+        } catch (e: IndexOutOfBoundsException) {
+            Log.d("ERR", e.toString())
+        }
+
     }
 
 }

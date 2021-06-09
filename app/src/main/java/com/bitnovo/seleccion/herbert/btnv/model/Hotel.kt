@@ -16,7 +16,7 @@ object Hotel {
 
     fun allowNewStyFourVisitors() {
 // Starting to Visit to the hotel
-        for (indexVisitor in 0..63) {
+        for (indexVisitor in 1..64) {
             for (indexWindows in 0..63) {
                 if (indexVisitor == 1) {
                     //Open the left window
@@ -40,10 +40,25 @@ object Hotel {
                     //Open the right window
                     windows.set(indexWindows, "D")
                 }
-                // Visitor #5
-                if (indexVisitor == 5 && windows[indexWindows].contains("D") && indexWindows.rem(3) == 0) {
+                // Visitor #5 to 64
+                if (indexVisitor > 4 && (windows[indexWindows].contains("C"))) {
+                    //Open the left window
+                    windows.set(indexWindows, "D")
+                }
+                // Visitor #5 to 64
+                if (indexVisitor > 4 && (windows[indexWindows].contains("A"))) {
                     //Open the left window
                     windows.set(indexWindows, "I")
+                }
+                // Visitor #5 to 64
+                if (indexVisitor > 4 && (windows[indexWindows].contains("I"))) {
+                    //Open the left window
+                    windows.set(indexWindows, "A")
+                }
+                // Visitor #5 to 64
+                if (indexVisitor > 4 && (windows[indexWindows].contains("D"))) {
+                    //Open the left window
+                    windows.set(indexWindows, "C")
                 }
             }
         }
@@ -90,12 +105,17 @@ object Hotel {
         for (index in 0..63) {
             Log.d("Ventana", winners_arraylist.toString())
             // If the position -1 is closed and position+1 is closed too. the actual position is a winner
-            if (index > 0 && windows[index].contains("A") &&
+            if (index == 0 && windows[index].contains("A")) {
+                winners_arraylist.add(index + 1)
+            }
+            if (index > 0 && index < 63 && windows[index].contains("A") &&
                 windows[index - 1].contains('C') &&
                 windows[index + 1].contains('C')
-                || (windows[index].contains('A'))
             ) {
-                winners_arraylist.add(index)
+                winners_arraylist.add(index + 1)
+            }
+            if (index == 63 && (windows[index].contains('A'))) {
+                winners_arraylist.add(index + 1)
             }
         }
         //Log.d("Ganadores", winners_arraylist.toString())
@@ -113,7 +133,6 @@ object Hotel {
         for (index in 0..63) {
             windows.set(index, "A")
         }
-
         return windows
     }
 
