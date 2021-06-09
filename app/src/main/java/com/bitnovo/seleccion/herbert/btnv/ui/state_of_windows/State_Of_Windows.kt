@@ -9,8 +9,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.bitnovo.seleccion.herbert.btnv.controller.Hotel
 import com.bitnovo.seleccion.herbert.btnv.databinding.StateOfWindowsFragmentBinding
-import com.bitnovo.seleccion.herbert.btnv.model.Hotel
 
 
 class State_Of_Windows : Fragment() {

@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.bitnovo.seleccion.herbert.btnv.controller.Hotel
 import com.bitnovo.seleccion.herbert.btnv.databinding.AmountOfWindowsAccordingToStateFragmentBinding
-import com.bitnovo.seleccion.herbert.btnv.model.Hotel
 
 class Amount_Of_Windows_According_to_State : Fragment() {
 

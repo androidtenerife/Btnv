@@ -1,4 +1,4 @@
-package com.bitnovo.seleccion.herbert.btnv.model
+package com.bitnovo.seleccion.herbert.btnv.controller
 
 import android.os.Build
 import android.support.annotation.RequiresApi
@@ -114,7 +114,7 @@ object Hotel {
             ) {
                 winners_arraylist.add(index + 1)
             }
-            if (index > 1 && index < 63 && windows[index].contains("A")
+            if (index >= 1 && index < 63 && windows[index].contains("A")
             ) {
                 winners_arraylist.add(index + 1)
             }

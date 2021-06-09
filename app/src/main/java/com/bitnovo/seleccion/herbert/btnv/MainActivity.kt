@@ -10,8 +10,8 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.bitnovo.seleccion.herbert.btnv.controller.Hotel
 import com.bitnovo.seleccion.herbert.btnv.databinding.ActivityMainBinding
-import com.bitnovo.seleccion.herbert.btnv.model.Hotel
 
 class MainActivity : AppCompatActivity() {
 

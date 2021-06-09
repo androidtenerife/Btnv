@@ -9,8 +9,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.bitnovo.seleccion.herbert.btnv.controller.Hotel
 import com.bitnovo.seleccion.herbert.btnv.databinding.ResetWindowsToOpenAllFragmentBinding
-import com.bitnovo.seleccion.herbert.btnv.model.Hotel
 
 class Reset_Windows_to_Open_All : Fragment() {
 
