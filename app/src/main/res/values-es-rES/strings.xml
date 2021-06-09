@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Btnv</string>
+    <string name="about">"Acerca de "</string>
+    <string name="dev_test">Test de Desarrollo</string>
+    <string name="results">Resultados</string>
+    <string name="the_windows_castle_game">El Juego del Castillo y Ventanas</string>
+    <string name="menu_allow_new_sty_four_visitors">Pasar nuevos 64 visitantes</string>
+    <string name="menu_reset_windows_to_open_all">Resetear Ventanas a Abiertas</string>
+    <string name="menu_get_winners">Obtener Ganadores4</string>
+    <string name="menu_amount_of_windows_according_to_state">Numero de ventanas segun estado</string>
+    <string name="menu_state_of_windows">Obtener el estado de las ventanas</string>
+    <string name="menu_home">Inicio</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+</resources>

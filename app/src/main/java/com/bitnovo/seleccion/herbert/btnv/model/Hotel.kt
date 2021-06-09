@@ -9,19 +9,14 @@ object Hotel {
     private var isEmpty by Delegates.notNull<Boolean>()
     private val windows = ArrayList<String>(63)
     private val statesOfWindows = ArrayList<String>()
-
-
     fun getStateOfWindows(): ArrayList<String> {
         val get_state_of_windows_array = windows
-
         return get_state_of_windows_array
     }
 
     fun allowNewStyFourVisitors() {
 // Starting to Visit to the hotel
-
         for (indexVisitor in 0..63) {
-
             for (indexWindows in 0..63) {
                 if (indexVisitor == 1) {
                     //Open the left window
@@ -50,13 +45,8 @@ object Hotel {
                     //Open the left window
                     windows.set(indexWindows, "I")
                 }
-
             }
-
-
         }
-
-
     }
 
     fun amountOfWindowsAccordingToState(): ArrayList<Int> {
@@ -66,12 +56,8 @@ object Hotel {
         var state_A: Int = 0
         var state_I: Int = 0
         var state_D: Int = 0
-
-
-
         // Iterate on Hotel array windows
         for (index in 0..63) {
-
             if (windows[index].contentEquals("C")) {
                 state_C++
             }
@@ -84,8 +70,6 @@ object Hotel {
             if (windows[index].contentEquals("D")) {
                 state_D++
             }
-
-
         }
         Log.d("Amount Of C", state_C.toString())
         Log.d("Amount Of A", state_A.toString())
@@ -113,7 +97,6 @@ object Hotel {
             ) {
                 winners_arraylist.add(index)
             }
-
         }
         //Log.d("Ganadores", winners_arraylist.toString())
         return winners_arraylist
