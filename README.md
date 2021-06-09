@@ -24,4 +24,6 @@ El castillo posee 64 ventanas con 2 alas, una a la izquierda y otra a la derecha
 # Ganadores
  Un visitante gana si la ventana de su numero esta abierta y las ventanas anterior y posterior están cerradas 
  Por ejemplo el visitante 15 es ganador .
-<img src="https://raw.githubusercontent.com/androidtenerife/Btnv/master/Screenshot_20210609_001307_com.bitnovo.seleccion.herbert.btnv.jpg?token=AFQDLBYZTSC67BDHDBGTOJDAYABRK" width="320" height="640">
+
+![Captura](https://user-images.githubusercontent.com/23082375/121273098-5aa4f180-c8bf-11eb-918e-ff9a99e3207c.jpg)
+
