@@ -105,18 +105,20 @@ object Hotel {
         for (index in 0..63) {
             Log.d("Ventana", winners_arraylist.toString())
             // If the position -1 is closed and position+1 is closed too. the actual position is a winner
-            if (index == 0 && windows[index].contains("A")) {
+            if ((index == 0 || index == 63) && (windows[index].contains("A"))) {
                 winners_arraylist.add(index + 1)
             }
-            if (index > 0 && index < 63 && windows[index].contains("A") &&
+            if (index == 1 && index < 63 && windows[index].contains("A") &&
                 windows[index - 1].contains('C') &&
                 windows[index + 1].contains('C')
             ) {
                 winners_arraylist.add(index + 1)
             }
-            if (index == 63 && (windows[index].contains('A'))) {
+            if (index > 1 && index < 63 && windows[index].contains("A")
+            ) {
                 winners_arraylist.add(index + 1)
             }
+
         }
         //Log.d("Ganadores", winners_arraylist.toString())
         return winners_arraylist
